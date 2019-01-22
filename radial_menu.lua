@@ -91,7 +91,7 @@ function RadialMenu:draw()
     
     --the text in the middle
     if self.selected and #self.segments > 0 then
-        love.graphics.printf(self.segments[self.selected].text, self.x - self.width, self.y, self.width * 2, "center")
+        love.graphics.printf(self.segments[self.selected].text, self.x - self.width, self.y, self.radius - self.width * 2, "center")
     end
 end
 
